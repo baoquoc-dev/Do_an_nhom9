@@ -229,6 +229,8 @@ var list_products = [
         "detail": {
         "screen": "16.2', Liquid Retina XDR",
         "os": "macOS Monterey",
+        "camara": "12 MP",
+        "camaraFront": "7 MP",
         "cpu": "Apple M1 Pro chip",
         "ram": "16 GB",
         "rom": "512 GB SSD",
@@ -251,6 +253,8 @@ var list_products = [
         "detail": {
         "screen": "13.6', Retina Display",
         "os": "macOS Ventura",
+        "camara": "12 MP",
+        "camaraFront": "7 MP",
         "cpu": "Apple M2 chip",
         "ram": "8 GB",
         "rom": "256 GB SSD",
@@ -273,6 +277,8 @@ var list_products = [
         "detail": {
         "screen": "14.2', Liquid Retina XDR",
         "os": "macOS Monterey",
+        "camara": "12 MP",
+        "camaraFront": "7 MP",
         "cpu": "Apple M1 Pro chip",
         "ram": "16 GB",
         "rom": "512 GB SSD",
@@ -295,6 +301,8 @@ var list_products = [
         "detail": {
         "screen": "13.3', Retina Display",
         "os": "macOS Big Sur",
+        "camara": "12 MP",
+        "camaraFront": "7 MP",
         "cpu": "Apple M1 chip",
         "ram": "8 GB",
         "rom": "256 GB SSD",
@@ -317,6 +325,8 @@ var list_products = [
         "detail": {
         "screen": "13.3', Retina Display",
         "os": "macOS Monterey",
+        "camara": "12 MP",
+        "camaraFront": "7 MP",
         "cpu": "Apple M2 chip",
         "ram": "8 GB",
         "rom": "256 GB SSD",
@@ -339,6 +349,8 @@ var list_products = [
         "detail": {
         "screen": "13.3', Retina Display",
         "os": "macOS Big Sur",
+        "camara": "12 MP",
+        "camaraFront": "7 MP",
         "cpu": "Apple M1 chip",
         "ram": "8 GB",
         "rom": "256 GB SSD",
@@ -361,6 +373,8 @@ var list_products = [
         "detail": {
         "screen": "13.3', Retina Display",
         "os": "macOS Big Sur",
+        "camara": "12 MP",
+        "camaraFront": "7 MP",
         "cpu": "Apple M1 chip",
         "ram": "8 GB",
         "rom": "256 GB SSD",
@@ -383,6 +397,8 @@ var list_products = [
         "detail": {
         "screen": "15.4', Retina Display",
         "os": "macOS Catalina",
+        "camara": "12 MP",
+        "camaraFront": "7 MP",
         "cpu": "Intel Core i7",
         "ram": "16 GB",
         "rom": "512 GB SSD",
