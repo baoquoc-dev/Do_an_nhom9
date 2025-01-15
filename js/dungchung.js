@@ -595,7 +595,7 @@ function addFooter() {
 
     <!-- ============== Footer ============= -->
     <div class="copy-right">
-        <p>Designed by group 8</span></p>
+        <p>Designed by group 9</span></p>
     </div>`);
 }
 
