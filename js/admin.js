@@ -1,7 +1,7 @@
 var TONGTIEN = 0;
 
 window.onload = function () {
-    // get data từ localstorage
+    //Lấy data từ localstorage
     list_products = getListProducts() || list_products;
     adminInfo = getListAdmin() || adminInfo;
 
@@ -122,7 +122,6 @@ function addThongKe() {
     ));
 }
 
-// ======================= Các Tab =========================
 function addEventChangeTab() {
     var sidebar = document.getElementsByClassName('sidebar')[0];
     var list_a = sidebar.getElementsByTagName('a');
@@ -147,13 +146,11 @@ function turnOff_Active() {
 }
 
 function openTab(nameTab) {
-    // ẩn hết
     var main = document.getElementsByClassName('main')[0].children;
     for(var e of main) {
         e.style.display = 'none';
     }
 
-    // mở tab
     switch(nameTab) {
         case 'Trang Chủ': document.getElementsByClassName('home')[0].style.display = 'block'; break;
         case 'Sản Phẩm': document.getElementsByClassName('sanpham')[0].style.display = 'block'; break;
@@ -162,7 +159,6 @@ function openTab(nameTab) {
     }
 }
 
-// ========================== Sản Phẩm ========================
 // Vẽ bảng danh sách sản phẩm
 function addTableProducts() {
     var tc = document.getElementsByClassName('sanpham')[0].getElementsByClassName('table-content')[0];
@@ -489,11 +485,6 @@ function addKhungSuaSanPham(masp) {
 
 // Cập nhật ảnh sản phẩm
 function capNhatAnhSanPham(files, id) {
-    // var url = '';
-    // if(files.length) url = window.URL.createObjectURL(files[0]);
-    
-    // document.getElementById(id).src = url;
-
     const reader = new FileReader();
     reader.addEventListener("load", function () {
         // convert image file to base64 string
@@ -528,8 +519,7 @@ function getValueOfTypeInTable_SanPham(tr, loai) {
     return false;
 }
 
-// ========================= Đơn Hàng ===========================
-// Vẽ bảng
+// Vẽ bảng đơn hàng
 function addTableDonHang() {
     var tc = document.getElementsByClassName('donhang')[0].getElementsByClassName('table-content')[0];
     var s = `<table class="table-outline hideImg">`;
@@ -707,8 +697,7 @@ function getValueOfTypeInTable_DonHang(tr, loai) {
     return false;
 }
 
-// ====================== Khách Hàng =============================
-// Vẽ bảng
+// Vẽ bảng khách hàng
 function addTableKhachHang() {
     var tc = document.getElementsByClassName('khachhang')[0].getElementsByClassName('table-content')[0];
     var s = `<table class="table-outline hideImg">`;
@@ -767,7 +756,7 @@ function openThemNguoiDung() {
     window.alert('Not Available!');
 }
 
-// vô hiệu hóa người dùng (tạm dừng, không cho đăng nhập vào)
+// vô hiệu hóa người dùng
 function voHieuHoaNguoiDung(inp, taikhoan) {
     var listUser = getListUser();
     for(var u of listUser) {
@@ -822,8 +811,6 @@ function getValueOfTypeInTable_KhachHang(tr, loai) {
     return false;
 }
 
-// ================== Sort ====================
-// https://github.com/HoangTran0410/First_html_css_js/blob/master/sketch.js
 var decrease = true; // Sắp xếp giảm dần
 
 // loại là tên cột, func là hàm giúp lấy giá trị từ cột loai
@@ -862,22 +849,6 @@ function swap(arr, i, j) {
     var tempj = arr[j].cloneNode(true);
     arr[i].parentNode.replaceChild(tempj, arr[i]);
     arr[j].parentNode.replaceChild(tempi, arr[j]);
-}
-
-// ================= các hàm thêm ====================
-// Chuyển khuyến mãi vễ dạng chuỗi tiếng việt
-function promoToStringValue(pr) {
-    switch (pr.name) {
-        case 'tragop':
-            return 'Góp ' + pr.value + '%';
-        case 'giamgia':
-            return 'Giảm ' + pr.value;
-        case 'giareonline':
-            return 'Online (' + pr.value + ')';
-        case 'moiramat':
-            return 'Mới';
-    }
-    return '';
 }
 
 function progress(percent, bg, width, height) {
