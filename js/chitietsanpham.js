@@ -1,11 +1,9 @@
 var nameProduct, maProduct, sanPhamHienTai; // Tên sản phẩm trong trang này, 
-// là biến toàn cục để có thể dùng ở bát cứ đâu trong trang
-// không cần tính toán lấy tên từ url nhiều lần
 
 window.onload = function () {
     khoiTao();
 
-    // thêm tags (từ khóa) vào khung tìm kiếm
+    // thêm tags vào khung tìm kiếm
     var tags = ["MacBook", "iPhone"];
     for (var t of tags) addTags(t, "index.html?search=" + t, true);
 
@@ -27,8 +25,6 @@ function phanTich_URL_chiTietSanPham() {
     nameProduct = window.location.href.split('?')[1]; // lấy tên
     if(!nameProduct) return khongTimThaySanPham();
 
-    // tách theo dấu '-' vào gắn lại bằng dấu ' ', code này giúp bỏ hết dấu '-' thay vào bằng khoảng trắng.
-    // code này làm ngược lại so với lúc tạo href cho sản phẩm trong file classes.js
     nameProduct = nameProduct.split('-').join(' ');
 
     for(var p of list_products) {
@@ -104,31 +100,6 @@ function phanTich_URL_chiTietSanPham() {
         center: true,
         smartSpeed: 450,
     });
-}
-
-// Chi tiết khuyến mãi
-function getDetailPromo(sp) {
-    switch (sp.promo.name) {
-        case 'tragop':
-            var span = `<span style="font-weight: bold"> lãi suất ` + sp.promo.value + `% </span>`;
-            return `Khách hàng có thể mua trả góp sản phẩm với ` + span + `với thời hạn 6 tháng kể từ khi mua hàng.`;
-
-        case 'giamgia':
-            var span = `<span style="font-weight: bold">` + sp.promo.value + `</span>`;
-            return `Khách hàng sẽ được giảm ` + span + `₫ khi tới mua trực tiếp tại cửa hàng`;
-
-        case 'moiramat':
-            return `Khách hàng sẽ được thử máy miễn phí tại cửa hàng. Có thể đổi trả lỗi trong vòng 2 tháng.`;
-
-        case 'giareonline':
-            var del = stringToNum(sp.price) - stringToNum(sp.promo.value);
-            var span = `<span style="font-weight: bold">` + numToString(del) + `</span>`;
-            return `Sản phẩm sẽ được giảm ` + span + `₫ khi mua hàng online bằng thẻ VPBank hoặc tin nhắn SMS`;
-
-        default:
-            var span = `<span style="font-weight: bold">61 xe Wave Alpha</span>`;
-            return `Cơ hội trúng ` + span + ` khi trả góp Home Credit`;
-    }
 }
 
 function addThongSo(ten, giatri) {
