@@ -286,11 +286,7 @@ function tinhToanPhanTrang(list, vitriTrang) {
 	return temp.splice(start, soLuongSanPhamMaxTrongMotTrang);
 }
 
-// ======== TÌM KIẾM (Từ mảng list truyền vào, trả về 1 mảng kết quả) ============
-
-// function timKiemTheoTen(list, ten, soluong) {}
-// hàm Tìm-kiếm-theo-tên được đặt trong dungchung.js , do trang chitietsanpham cũng cần dùng tới nó
-
+//TÌM KIẾM (Từ mảng list truyền vào, trả về 1 mảng kết quả)
 function timKiemTheoCongTySanXuat(list, tenCongTy, soluong) {
 	var count, result = [];
 	if (soluong < list.length) count = soluong;

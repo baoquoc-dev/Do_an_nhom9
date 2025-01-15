@@ -217,7 +217,7 @@ function suggestion(){
         let soDanhGia = Number.parseInt(sanPham.rateCount, 10)
         let soSao = Number.parseInt(sanPham.star, 10);
 
-        // Tính điểm cho sản phẩm này (càng thoả nhiều tiêu chí điểm càng cao => càng nên gợi ý)
+        // Tính điểm cho sản phẩm này
         let diem = 0;
         if(giaTienGanGiong) diem += 20;
         if(giongThongSoKyThuat) diem += soLuongChiTietGiongNhau;

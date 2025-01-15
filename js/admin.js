@@ -811,8 +811,6 @@ function getValueOfTypeInTable_KhachHang(tr, loai) {
     return false;
 }
 
-// ================== Sort ====================
-// https://github.com/HoangTran0410/First_html_css_js/blob/master/sketch.js
 var decrease = true; // Sắp xếp giảm dần
 
 // loại là tên cột, func là hàm giúp lấy giá trị từ cột loai
@@ -853,7 +851,6 @@ function swap(arr, i, j) {
     arr[j].parentNode.replaceChild(tempi, arr[j]);
 }
 
-// ================= các hàm thêm ====================
 // Chuyển khuyến mãi vễ dạng chuỗi tiếng việt
 function promoToStringValue(pr) {
     switch (pr.name) {
