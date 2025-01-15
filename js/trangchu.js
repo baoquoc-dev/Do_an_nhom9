@@ -20,11 +20,11 @@ window.onload = function () {
 	autocomplete(document.getElementById('search-box'), list_products);
 
 	// thêm tags (từ khóa) vào khung tìm kiếm
-	var tags = ["Macbook", "iPhone"];
+	var tags = ["MacBook", "iPhone"];
 	for (var t of tags) addTags(t, "index.html?search=" + t);
 
 	// Thêm danh sách hãng điện thoại
-	var company = ["iPhone.png", "Macbook.png"
+	var company = ["iPhone.png", "MacBook.png"
 	];
 	for (var c of company) addCompany("img/company/" + c, c.slice(0, c.length - 4));
 
@@ -52,7 +52,7 @@ window.onload = function () {
 		// Thêm các khung sản phẩm
 		var div = document.getElementsByClassName('contain-khungSanPham')[0];
 		addKhungSanPham('IPHONE', yellow_red, ['promo=iPhone', 'sort=rateCount-decrease'], soLuong, div);
-		addKhungSanPham('MACBOOK', yellow_red, ['promo=Macbook', 'sort=rateCount-decrease'], soLuong, div);
+		addKhungSanPham('MACBOOK', yellow_red, ['promo=MacBook', 'sort=rateCount-decrease'], soLuong, div);
 	}
 
 	// Thêm chọn mức giá

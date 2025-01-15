@@ -9,7 +9,7 @@ window.onload = function () {
     autocomplete(document.getElementById('search-box'), list_products);
 
     // thêm tags (từ khóa) vào khung tìm kiếm
-    var tags = ["Macbook", "iPhone"];
+    var tags = ["MacBook", "iPhone"];
     for (var t of tags) addTags(t, "index.html?search=" + t);
 
     currentUser = getCurrentUser();

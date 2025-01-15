@@ -52,7 +52,6 @@ function createChartConfig(
                 data: data,
                 backgroundColor: colors,
                 borderColor: colors,
-                // borderWidth: 2
             }]
         },
         options: {
@@ -121,18 +120,6 @@ function addThongKe() {
         Object.values(thongKeHang).map(_ =>  _.doanhThu),
         colors,
     ));
-
-    // var doughnutChart = copyObject(dataChart);
-    //     doughnutChart.type = 'doughnut';
-    // addChart('myChart2', doughnutChart);
-
-    // var pieChart = copyObject(dataChart);
-    //     pieChart.type = 'pie';
-    // addChart('myChart3', pieChart);
-
-    // var lineChart = copyObject(dataChart);
-    //     lineChart.type = 'line';
-    // addChart('myChart4', lineChart);
 }
 
 // ======================= Các Tab =========================

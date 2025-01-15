@@ -223,7 +223,7 @@ var list_products = [
         "star": 5,
         "rateCount": 120,
         "promo": {
-        "name": "Macbook",
+        "name": "MacBook",
         "value": "5"
         },
         "detail": {
@@ -245,7 +245,7 @@ var list_products = [
         "star": 4,
         "rateCount": 80,
         "promo": {
-        "name": "Macbook",
+        "name": "MacBook",
         "value": "0"
         },
         "detail": {
@@ -267,7 +267,7 @@ var list_products = [
         "star": 5,
         "rateCount": 150,
         "promo": {
-        "name": "Macbook",
+        "name": "MacBook",
         "value": "10"
         },
         "detail": {
@@ -289,7 +289,7 @@ var list_products = [
         "star": 4,
         "rateCount": 200,
         "promo": {
-        "name": "Macbook",
+        "name": "MacBook",
         "value": "0"
         },
         "detail": {
@@ -311,7 +311,7 @@ var list_products = [
         "star": 4,
         "rateCount": 120,
         "promo": {
-        "name": "Macbook",
+        "name": "MacBook",
         "value": "0"
         },
         "detail": {
@@ -333,7 +333,7 @@ var list_products = [
         "star": 4,
         "rateCount": 180,
         "promo": {
-        "name": "Macbook",
+        "name": "MacBook",
         "value": "0"
         },
         "detail": {
@@ -355,7 +355,7 @@ var list_products = [
         "star": 4,
         "rateCount": 160,
         "promo": {
-        "name": "Macbook",
+        "name": "MacBook",
         "value": "0"
         },
         "detail": {
@@ -377,7 +377,7 @@ var list_products = [
         "star": 5,
         "rateCount": 75,
         "promo": {
-        "name": "Macbook",
+        "name": "MacBook",
         "value": "5"
         },
         "detail": {
