@@ -25,6 +25,7 @@ function phanTich_URL_chiTietSanPham() {
     nameProduct = window.location.href.split('?')[1]; // lấy tên
     if(!nameProduct) return khongTimThaySanPham();
 
+
     nameProduct = nameProduct.split('-').join(' ');
 
     for(var p of list_products) {
@@ -102,6 +103,31 @@ function phanTich_URL_chiTietSanPham() {
     });
 }
 
+// Chi tiết khuyến mãi
+function getDetailPromo(sp) {
+    switch (sp.promo.name) {
+        case 'tragop':
+            var span = `<span style="font-weight: bold"> lãi suất ` + sp.promo.value + `% </span>`;
+            return `Khách hàng có thể mua trả góp sản phẩm với ` + span + `với thời hạn 6 tháng kể từ khi mua hàng.`;
+
+        case 'giamgia':
+            var span = `<span style="font-weight: bold">` + sp.promo.value + `</span>`;
+            return `Khách hàng sẽ được giảm ` + span + `₫ khi tới mua trực tiếp tại cửa hàng`;
+
+        case 'moiramat':
+            return `Khách hàng sẽ được thử máy miễn phí tại cửa hàng. Có thể đổi trả lỗi trong vòng 2 tháng.`;
+
+        case 'giareonline':
+            var del = stringToNum(sp.price) - stringToNum(sp.promo.value);
+            var span = `<span style="font-weight: bold">` + numToString(del) + `</span>`;
+            return `Sản phẩm sẽ được giảm ` + span + `₫ khi mua hàng online bằng thẻ VPBank hoặc tin nhắn SMS`;
+
+        default:
+            var span = `<span style="font-weight: bold">61 xe Wave Alpha</span>`;
+            return `Cơ hội trúng ` + span + ` khi trả góp Home Credit`;
+    }
+}
+
 function addThongSo(ten, giatri) {
     return `<li>
                 <p>` + ten + `</p>
@@ -149,6 +175,7 @@ function addKhungSanPham(list_sanpham, tenKhung, color, ele) {
 
 	for (var i = 0; i < list_sanpham.length; i++) {
 		s += addProduct(list_sanpham[i], null, true);
+		// truyền vào 'true' để trả về chuỗi rồi gán vào s
 	}
 
 	// thêm khung vào contain-khung
@@ -157,10 +184,10 @@ function addKhungSanPham(list_sanpham, tenKhung, color, ele) {
 
 /// gợi ý sản phẩm
 function suggestion(){
-    //Lay ra thong tin san pham hien tai 
+    // ====== Lay ra thong tin san pham hien tai ====== 
     const giaSanPhamHienTai = stringToNum(sanPhamHienTai.price);
 
-    //Tìm các sản phẩm tương tự theo tiêu chí 
+    // ====== Tìm các sản phẩm tương tự theo tiêu chí ====== 
     const sanPhamTuongTu = list_products
     // Lọc sản phẩm trùng
     .filter((_) => _.masp !== sanPhamHienTai.masp)
