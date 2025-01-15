@@ -149,7 +149,6 @@ function addKhungSanPham(list_sanpham, tenKhung, color, ele) {
 
 	for (var i = 0; i < list_sanpham.length; i++) {
 		s += addProduct(list_sanpham[i], null, true);
-		// truyền vào 'true' để trả về chuỗi rồi gán vào s
 	}
 
 	// thêm khung vào contain-khung
@@ -158,10 +157,10 @@ function addKhungSanPham(list_sanpham, tenKhung, color, ele) {
 
 /// gợi ý sản phẩm
 function suggestion(){
-    // ====== Lay ra thong tin san pham hien tai ====== 
+    //Lay ra thong tin san pham hien tai 
     const giaSanPhamHienTai = stringToNum(sanPhamHienTai.price);
 
-    // ====== Tìm các sản phẩm tương tự theo tiêu chí ====== 
+    //Tìm các sản phẩm tương tự theo tiêu chí 
     const sanPhamTuongTu = list_products
     // Lọc sản phẩm trùng
     .filter((_) => _.masp !== sanPhamHienTai.masp)

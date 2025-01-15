@@ -697,7 +697,7 @@ function getValueOfTypeInTable_DonHang(tr, loai) {
     return false;
 }
 
-// Vẽ bảng khách hàng
+// Vẽ bảng khách hangf
 function addTableKhachHang() {
     var tc = document.getElementsByClassName('khachhang')[0].getElementsByClassName('table-content')[0];
     var s = `<table class="table-outline hideImg">`;
@@ -756,7 +756,7 @@ function openThemNguoiDung() {
     window.alert('Not Available!');
 }
 
-// vô hiệu hóa người dùng
+// vô hiệu hóa người dùng (tạm dừng, không cho đăng nhập vào)
 function voHieuHoaNguoiDung(inp, taikhoan) {
     var listUser = getListUser();
     for(var u of listUser) {
@@ -811,6 +811,8 @@ function getValueOfTypeInTable_KhachHang(tr, loai) {
     return false;
 }
 
+// ================== Sort ====================
+// https://github.com/HoangTran0410/First_html_css_js/blob/master/sketch.js
 var decrease = true; // Sắp xếp giảm dần
 
 // loại là tên cột, func là hàm giúp lấy giá trị từ cột loai
@@ -849,6 +851,22 @@ function swap(arr, i, j) {
     var tempj = arr[j].cloneNode(true);
     arr[i].parentNode.replaceChild(tempj, arr[i]);
     arr[j].parentNode.replaceChild(tempi, arr[j]);
+}
+
+// ================= các hàm thêm ====================
+// Chuyển khuyến mãi vễ dạng chuỗi tiếng việt
+function promoToStringValue(pr) {
+    switch (pr.name) {
+        case 'tragop':
+            return 'Góp ' + pr.value + '%';
+        case 'giamgia':
+            return 'Giảm ' + pr.value;
+        case 'giareonline':
+            return 'Online (' + pr.value + ')';
+        case 'moiramat':
+            return 'Mới';
+    }
+    return '';
 }
 
 function progress(percent, bg, width, height) {
