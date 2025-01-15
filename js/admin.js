@@ -405,7 +405,7 @@ function addKhungSuaSanPham(masp) {
             <td>
                 <select>`
                     
-    var company = ["iPhone", "Macbook"];
+    var company = ["iPhone", "MacBook"];
     for(var c of company) {
         if(sp.company == c)
             s += (`<option value="`+c+`" selected>`+c+`</option>`);

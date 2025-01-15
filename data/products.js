@@ -216,7 +216,7 @@ var list_products = [
       "masp": "App8"
     },
     {
-        "name": "MacBook Pro 16-inch M1 Pro",
+        "name": "MacBook Pro 16 inch M1 Pro",
         "company": "MacBook",
         "img": "img/products/macpro16.jpg",
         "price": "56.990.000",
@@ -260,7 +260,7 @@ var list_products = [
         "masp": "Sam1"
     },
     {
-        "name": "MacBook Pro 14-inch M1 Pro",
+        "name": "MacBook Pro 14 inch M1 Pro",
         "company": "MacBook",
         "img": "img/products/macpro14.jpg",
         "price": "42.990.000",
@@ -304,7 +304,7 @@ var list_products = [
         "masp": "Sam3"
     },
     {
-        "name": "MacBook Pro 13-inch M2",
+        "name": "MacBook Pro 13 inch M2",
         "company": "MacBook",
         "img": "img/products/macpro13.jpg",
         "price": "31.990.000",
@@ -326,7 +326,7 @@ var list_products = [
         "masp": "Sam4"
     },
     {
-        "name": "MacBook Air 13-inch M1",
+        "name": "MacBook Air 13 inch M1",
         "company": "MacBook",
         "img": "img/products/macair13.jpg",
         "price": "22.990.000",
@@ -348,7 +348,7 @@ var list_products = [
         "masp": "Sam5"
     },
     {
-        "name": "MacBook Pro 13-inch M1",
+        "name": "MacBook Pro 13 inch M1",
         "company": "MacBook",
         "img": "img/products/macpro13m1.jpg",
         "price": "28.990.000",
@@ -370,7 +370,7 @@ var list_products = [
         "masp": "Sam6"
     },
     {
-        "name": "MacBook Pro 15-inch Retina",
+        "name": "MacBook Pro 15 inch Retina",
         "company": "MacBook",
         "img": "img/products/macpro15.jpg",
         "price": "45.990.000",
