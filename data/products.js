@@ -3,7 +3,7 @@ var list_products = [
       "name": "iPhone 14 Pro Max",
       "company": "iPhone",
       "img": "img/products/ip14prm.jpg",
-      "price": "31.990.000",
+      "price": "31.90.000",
       "star": 5,
       "rateCount": 154,
       "promo": {
