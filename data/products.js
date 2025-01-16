@@ -339,7 +339,7 @@ var list_products = [
         "name": "MacBook Air 13 inch M1",
         "company": "MacBook",
         "img": "img/products/macair13.jpg",
-        "price": "22.990.000",
+        "price": "29.990.000",
         "star": 4,
         "rateCount": 180,
         "promo": {
